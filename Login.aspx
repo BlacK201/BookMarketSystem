@@ -29,6 +29,8 @@
        
        
        
+       
+       
         </div>
         <form id="form1" runat="server">
 
@@ -49,7 +51,7 @@
             </div>
 
             <div class="remember-me">
-                <input type="checkbox">
+                <input type="checkbox" />
                 <span style="color: #757575">7天内免登录</span>
             </div>
 
@@ -63,7 +65,7 @@
         <div class="register">
             <span style="color: #657575">还没有账号？</span>
             <a href="./Register.aspx">
-                <button id="register-link">现在注册！</button></a>
+                <button formnovalidate="formnovalidate" id="register-link">现在注册！</button></a>
         </div>
     </div>
 </body>

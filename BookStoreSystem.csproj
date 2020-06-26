@@ -58,6 +58,7 @@
     <Reference Include="System.EnterpriseServices" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="account.aspx" />
     <Content Include="assets\css\flUhRq6tzZclQEJ-Vdg-IuiaDsNc.woff2" />
     <None Include="Properties\PublishProfiles\IISProfile.pubxml" />
     <None Include="Web.Debug.config">
@@ -70,11 +71,67 @@
   <ItemGroup>
     <Content Include="assets\css\Login.css" />
     <None Include="Login.aspx" />
+    <Content Include="assets\css\main.css" />
     <Content Include="assets\css\Material Icons.css" />
+    <Content Include="assets\images\20070919010738-99-50x50.jpg" />
+    <Content Include="assets\images\20070919010738-99-80x80.jpg" />
+    <Content Include="assets\images\account.png" />
+    <Content Include="assets\images\arrow-down.png" />
+    <Content Include="assets\images\arrows.png" />
+    <Content Include="assets\images\banner.jpg" />
+    <Content Include="assets\images\banner2.jpg" />
+    <Content Include="assets\images\body_bg.jpg" />
+    <Content Include="assets\images\bullets.png" />
+    <Content Include="assets\images\cart.png" />
+    <Content Include="assets\images\cat-sep.gif" />
+    <Content Include="assets\images\catmenu.png" />
+    <Content Include="assets\images\checkout.png" />
+    <Content Include="assets\images\circle.png" />
+    <Content Include="assets\images\compare.png" />
+    <Content Include="assets\images\controlnav.png" />
+    <Content Include="assets\images\facebook.png" />
+    <Content Include="assets\images\featured_bg.gif" />
+    <Content Include="assets\images\footer_h3.png" />
+    <Content Include="assets\images\home.png" />
+    <Content Include="assets\images\icons24x24.png" />
+    <Content Include="assets\images\imac_1-228x228.jpg" />
+    <Content Include="assets\images\imac_1-50x50.jpg" />
+    <Content Include="assets\images\imac_1-80x80.jpg" />
+    <Content Include="assets\images\imac_2-74x74.jpg" />
+    <Content Include="assets\images\imac_3-74x74.jpg" />
+    <Content Include="assets\images\Info.png" />
+    <Content Include="assets\images\ipod_nano_1-50x50.jpg" />
+    <Content Include="assets\images\ipod_nano_1-80x80.jpg" />
+    <Content Include="assets\images\ipod_shuffle_1-80x80.jpg" />
+    <Content Include="assets\images\ipod_touch_1-80x80.jpg" />
+    <Content Include="assets\images\ipod_touch_4-80x80.jpg" />
+    <Content Include="assets\images\loading.gif" />
+    <Content Include="assets\images\login.png" />
+    <Content Include="assets\images\logo-footer.png" />
+    <Content Include="assets\images\logo.png" />
+    <Content Include="assets\images\menu_separator.png" />
+    <Content Include="assets\images\product_holder.jpg" />
+    <Content Include="assets\images\register.png" />
+    <Content Include="assets\images\ribbon.png" />
+    <Content Include="assets\images\rss.png" />
+    <Content Include="assets\images\search.png" />
+    <Content Include="assets\images\slider_pattern.png" />
+    <Content Include="assets\images\stars.png" />
+    <Content Include="assets\images\timthumb-80x80.jpg" />
+    <Content Include="assets\images\twitter.png" />
+    <Content Include="assets\images\wishlist.png" />
+    <Content Include="assets\images\wish_list.png" />
     <Content Include="Register.aspx" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="account.aspx.cs">
+      <DependentUpon>account.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="account.aspx.designer.cs">
+      <DependentUpon>account.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Login.aspx.cs">
       <DependentUpon>Login.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>

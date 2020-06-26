@@ -9,6 +9,11 @@ namespace BookMarketSystem
         protected void Page_Load(object sender, EventArgs e)
         {
 
+            if (Convert.ToBoolean(Session["Logged"]) == true)
+            {
+                Response.Redirect("account.aspx");
+            }
+
         }
 
         protected void LoginButton_Click(object sender, EventArgs e)
@@ -17,7 +22,7 @@ namespace BookMarketSystem
 
             SqlConnection conn = new SqlConnection(connString);
 
-            SqlCommand cmd = new SqlCommand("SELECT UserEMail,UserPassword,UserName,UserFlag FROM Users", conn);
+            SqlCommand cmd = new SqlCommand("SELECT UserEMail,UserPassword,UserName,UserFlag,UserId FROM Users", conn);
 
             conn.Open();
 
@@ -27,6 +32,10 @@ namespace BookMarketSystem
             {
                 if (Convert.ToString(sdr[0]) == email.Text && Convert.ToString(sdr[1]) == password.Text)
                 {
+                    Session["Logged"] = true;
+                    Session["UserName"] = Convert.ToString(sdr[2]);
+                    Session["Flag"] = Convert.ToInt32(sdr[3]);
+                    Session["UserId"] = Convert.ToInt32(sdr[4]);
                     if (Convert.ToInt32(sdr[3]) == 99)
                     {
 
@@ -37,6 +46,8 @@ namespace BookMarketSystem
                     {
                         Response.Write("<script type=\"text/javascript\">alert(\"登录成功,！欢迎用户 " + Convert.ToString(sdr[2]) + " 登录！\");</script>");
                     }
+                    System.Threading.Thread.Sleep(3000);
+                    Response.Redirect("account.aspx");
                 }
                 else
                 {

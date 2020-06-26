@@ -11,7 +11,7 @@ namespace BookMarketSystem
 {
 
 
-    public partial class Register
+    public partial class account
     {
 
         /// <summary>
@@ -24,48 +24,57 @@ namespace BookMarketSystem
         protected global::System.Web.UI.HtmlControls.HtmlForm form1;
 
         /// <summary>
-        /// email 控件。
+        /// UserName 控件。
         /// </summary>
         /// <remarks>
         /// 自动生成的字段。
         /// 若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox email;
+        protected global::System.Web.UI.WebControls.Label UserName;
 
         /// <summary>
-        /// username 控件。
+        /// cart_total 控件。
         /// </summary>
         /// <remarks>
         /// 自动生成的字段。
         /// 若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox username;
+        protected global::System.Web.UI.WebControls.DataList cart_total;
 
         /// <summary>
-        /// password 控件。
+        /// accountInformation 控件。
         /// </summary>
         /// <remarks>
         /// 自动生成的字段。
         /// 若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox password;
+        protected global::System.Web.UI.WebControls.Label accountInformation;
 
         /// <summary>
-        /// RegButton 控件。
+        /// OrderList 控件。
         /// </summary>
         /// <remarks>
         /// 自动生成的字段。
         /// 若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button RegButton;
+        protected global::System.Web.UI.WebControls.DataList OrderList;
 
         /// <summary>
-        /// RedirectToLogin 控件。
+        /// OrderData 控件。
         /// </summary>
         /// <remarks>
         /// 自动生成的字段。
         /// 若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
         /// </remarks>
-        protected global::System.Web.UI.WebControls.LinkButton RedirectToLogin;
+        protected global::System.Web.UI.WebControls.SqlDataSource OrderData;
+
+        /// <summary>
+        /// CartData 控件。
+        /// </summary>
+        /// <remarks>
+        /// 自动生成的字段。
+        /// 若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.SqlDataSource CartData;
     }
 }

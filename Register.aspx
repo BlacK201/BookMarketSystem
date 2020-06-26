@@ -58,11 +58,11 @@
                 </div>
                 <asp:Button ID="RegButton" runat="server" Text="注册" OnClick="RegButton_Click" />
             </div>
+            <div class="register">
+                <span style="color: #657575">已经有帐号了?</span>
+                <asp:LinkButton ID="RedirectToLogin" runat="server" CssClass="button" OnClick="RedirectToLogin_Click"><button formnovalidate="formnovalidate" id="register-link">登录</button></asp:LinkButton>
+            </div>
         </form>
-        <div class="register">
-            <span style="color: #657575">已经有帐号了?</span>
-            <a href="./Login.aspx">
-                <button id="register-link">登录</button></a>
-        </div>
+    </div>
 </body>
 </html>
