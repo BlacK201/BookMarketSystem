@@ -29,7 +29,7 @@ namespace BookMarketSystem
 
             if (Request.QueryString["class"] != null)
             {
-                BookData.SelectCommand = "SELECT Books.BookName, Books.BookContent, Authors.AuthorName, Books.BookAddTime, BookClass.ClassName, Books.BookPrice, Books.BookSales, Books.BookId FROM Authors INNER JOIN Books ON Authors.AuthorId = Books.AuthorId INNER JOIN BookClass ON Books.ClassId = BookClass.ClassId WHERE BookClass.ClassId = " + Request.QueryString["class"];
+                BookData.SelectCommand = "SELECT Books.BookName, Books.BookContent, Authors.AuthorName, Books.BookAddTime, BookClass.ClassName, Books.BookPrice, Books.BookSales, Books.BookId, Books.BookImageUrl FROM Authors INNER JOIN Books ON Authors.AuthorId = Books.AuthorId INNER JOIN BookClass ON Books.ClassId = BookClass.ClassId WHERE BookClass.ClassId = " + Request.QueryString["class"];
                 SqlConnection conn = new SqlConnection(ConfigurationManager.ConnectionStrings["ConnStr"].ConnectionString);
 
                 SqlCommand cmd = new SqlCommand("SELECT ClassName FROM BookClass WHERE ClassId = " + Request.QueryString["class"], conn);
@@ -44,7 +44,7 @@ namespace BookMarketSystem
 
             if (Request.QueryString["searchkey"] != null)
             {
-                BookData.SelectCommand = "SELECT Books.BookName, Books.BookContent, Authors.AuthorName, Books.BookAddTime, BookClass.ClassName, Books.BookPrice, Books.BookSales, Books.BookId FROM Authors INNER JOIN Books ON Authors.AuthorId = Books.AuthorId INNER JOIN BookClass ON Books.ClassId = BookClass.ClassId WHERE Books.BookName LIKE '%" + Request.QueryString["searchkey"] + "%'";
+                BookData.SelectCommand = "SELECT Books.BookName, Books.BookContent, Authors.AuthorName, Books.BookAddTime, BookClass.ClassName, Books.BookPrice, Books.BookSales, Books.BookId, Books.BookImageUrl FROM Authors INNER JOIN Books ON Authors.AuthorId = Books.AuthorId INNER JOIN BookClass ON Books.ClassId = BookClass.ClassId WHERE Books.BookName LIKE '%" + Request.QueryString["searchkey"] + "%'";
             }
         }
     }

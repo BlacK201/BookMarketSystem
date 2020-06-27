@@ -107,7 +107,8 @@
                                                 <div class="line">
                                                     <a href="#" class="image-link">
                                                         <div class="image">
-                                                            <img src="assets/images/bookimagenotfound.jpg" title="<%# Eval("BookName") %>" alt="<%# Eval("BookName") %>"></img>
+
+                                                            <img src="<%# (Eval("BookImageUrl").ToString() == "") ? "assets/images/bookimagenotfound.jpg": Eval("BookImageUrl")  %>" title="<%# Eval("BookName") %>" alt="<%# Eval("BookName") %>"></img>
                                                         </div>
                                                     </a>
                                                 </div>
@@ -119,7 +120,7 @@
                                                         <input id="AddCount<%# Eval("BookId") %>" type="text" placeholder="数量" /><a onclick="AddCert('<%# Eval("BookId") %>')" title="加入购物车"><span class="icon icon-basket">加入购物车</span></a>
                                                     </div>
                                                 </div>
-                                                <div class="name"><a href="#"><%# Eval("BookName") %></a></div>
+                                                <div class="name"><a href="#"><%# "《"+Eval("BookName")+"》 - " + Eval("AuthorName") %></a></div>
                                                 <div class="description"><%# Eval("BookContent") %></div>
                                                 <div class="clearfix"></div>
                                             </div>
@@ -175,7 +176,7 @@
                 <asp:SessionParameter SessionField="UserId" Name="userid"></asp:SessionParameter>
             </SelectParameters>
         </asp:SqlDataSource>
-        <asp:SqlDataSource runat="server" ID="BookData" ConnectionString='<%$ ConnectionStrings:ConnStr %>' SelectCommand="SELECT Books.BookId, Books.BookName, Books.BookContent, Authors.AuthorName, Books.BookAddTime, BookClass.ClassName, Books.BookPrice, Books.BookSales FROM Authors INNER JOIN Books ON Authors.AuthorId = Books.AuthorId INNER JOIN BookClass ON Books.ClassId = BookClass.ClassId"></asp:SqlDataSource>
+        <asp:SqlDataSource runat="server" ID="BookData" ConnectionString='<%$ ConnectionStrings:ConnStr %>' SelectCommand="SELECT Books.BookId, Books.BookName, Books.BookContent, Authors.AuthorName, Books.BookAddTime, BookClass.ClassName, Books.BookPrice, Books.BookSales, Books.BookImageUrl FROM Authors INNER JOIN Books ON Authors.AuthorId = Books.AuthorId INNER JOIN BookClass ON Books.ClassId = BookClass.ClassId"></asp:SqlDataSource>
 
         <asp:SqlDataSource runat="server" ID="BookClassData" ConnectionString='<%$ ConnectionStrings:ConnStr %>' SelectCommand="SELECT [ClassId], [ClassName] FROM [BookClass]"></asp:SqlDataSource>
     </form>
