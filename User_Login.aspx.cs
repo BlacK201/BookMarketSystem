@@ -4,7 +4,7 @@ using System.Data.SqlClient;
 
 namespace BookMarketSystem
 {
-    public partial class Login : System.Web.UI.Page
+    public partial class User_Login : System.Web.UI.Page
     {
         protected void Page_Load(object sender, EventArgs e)
         {
@@ -14,7 +14,6 @@ namespace BookMarketSystem
                 Response.Redirect("account.aspx");
             }
         }
-
         protected void LoginButton_Click(object sender, EventArgs e)
         {
             string connString = ConfigurationManager.ConnectionStrings["ConnStr"].ConnectionString;
@@ -56,5 +55,7 @@ namespace BookMarketSystem
             sdr.Close();
             conn.Close();
         }
+
     }
+
 }

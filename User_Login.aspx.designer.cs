@@ -11,7 +11,7 @@ namespace BookMarketSystem
 {
 
 
-    public partial class Login
+    public partial class User_Login
     {
 
         /// <summary>

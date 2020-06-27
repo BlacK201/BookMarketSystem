@@ -8,7 +8,7 @@ namespace BookMarketSystem
         {
             if (Convert.ToBoolean(Session["Logged"]) == false)
             {
-                Response.Redirect("Login.aspx");
+                Response.Redirect("User_Login.aspx");
             }
             UserName.Text = "用户：" + Convert.ToString(Session["UserName"]);
             if (Convert.ToInt32(Session["Flag"]) == 99)

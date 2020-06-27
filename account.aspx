@@ -18,7 +18,7 @@
                     <li><a href="index.aspx" class="home">商城主页</a></li>
                     <li class="active"><a href="account.aspx" class="account">个人中心</a></li>
                     <li><a href="cart.aspx" class="cart">购物车</a></li>
-                    <li style="float: right;"><a href="Login.aspx" class="register">
+                    <li style="float: right;"><a href="User_Login.aspx" class="register">
                         <asp:Label ID="UserName" runat="server" Text="登录"></asp:Label></a>
                     </li>
                 </ul>
