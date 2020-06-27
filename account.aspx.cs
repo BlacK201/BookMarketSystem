@@ -1,5 +1,4 @@
 ﻿using System;
-using System.Threading;
 
 namespace BookMarketSystem
 {
@@ -9,8 +8,6 @@ namespace BookMarketSystem
         {
             if (Convert.ToBoolean(Session["Logged"]) == false)
             {
-                Response.Write("请登录！");
-                Thread.Sleep(3000);
                 Response.Redirect("Login.aspx");
             }
             UserName.Text = "用户：" + Convert.ToString(Session["UserName"]);
@@ -27,7 +24,6 @@ namespace BookMarketSystem
             {
                 UserName.Text += "<br />用户级别: 普通用户";
             }
-
         }
 
         protected string test(string a)
@@ -37,6 +33,12 @@ namespace BookMarketSystem
                 return "admin";
             }
             else return a;
+        }
+
+        protected void Logout_Click(object sender, EventArgs e)
+        {
+            Session.Abandon();
+            Response.Redirect("index.aspx");
         }
     }
 }

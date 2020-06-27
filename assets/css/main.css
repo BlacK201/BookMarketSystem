@@ -1,9 +1,21 @@
-﻿html {
+﻿material-icons
+hhtml {
     font-size: 100%;
     -webkit-text-size-adjust: 100%;
     -ms-text-size-adjust: 100%;
 }
 
+l
+color: #eee;
+font-size: 12px;
+font-weight: bold;
+display: inline-block;
+padding: 6px 12px 8px 5px;
+text-shadow: 0 1px 0 #111;
+line-height: 6px;
+}
+
+htmtml,
 html, body, div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, abbr, address, cite, code, del, dfn, em, img,
 ins, kbd, q, samp, small, strong, sub, sup, var, b, i, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody,
 tfoot, thead, tr, th, td, article, aside, canvas, details, figcaption, figure, .footer, header, hgroup, menu, nav, section, summary,
@@ -831,91 +843,91 @@ Author URI: http://dev7studios.com
         padding: 0;
     }
 
-    #menu > ul > li:first-child {
-        border-left: none;
-        border-radius: 3px 0 0 0;
-    }
+        #menu ul li:first-child {
+            border-left: none;
+            border-radius: 3px 0 0 0;
+        }
 
 
-    #menu > ul > li {
-        position: relative;
-        float: left;
-        z-index: 98;
-    }
-
-        #menu > ul > li a.home {
-            background: url(../images/home.png) no-repeat top;
-            width: 26px;
-            margin-top: 6px;
+        #menu ul li {
             position: relative;
+            float: left;
+            z-index: 98;
         }
 
-        #menu > ul > li:hover {
-            background: #262626;
-        }
-
-        #menu > ul > li > a {
-            line-height: 20px;
-            text-decoration: none;
-            display: block;
-            z-index: 6;
-            position: relative;
-            border-bottom: 1px solid transparent;
-            color: #BBB;
-            display: inline-block;
-            background: url(../images/cat-sep.gif) no-repeat right;
-            padding: 15px 25px 12px;
-            text-shadow: 1px 1px 1px #000000;
-            font-size: 12px;
-        }
-
-        #menu > ul > li > div {
-            margin-left: 0px;
-            display: none;
-            position: absolute;
-            z-index: 25;
-            border: 1px solid #181717;
-            -webkit-border-radius: 0px 0px 5px 5px;
-            -moz-border-radius: 0px 0px 5px 5px;
-            -khtml-border-radius: 0px 0px 5px 5px;
-            border-radius: 0px 0px 5px 5px;
-            background: #262626;
-            margin-top: -2px;
-            border-top: none;
-        }
-
-        #menu > ul > li:hover > div {
-            display: table;
-        }
-
-        #menu > ul > li > div > ul {
-            display: table-cell;
-        }
-
-        #menu > ul > li ul + ul {
-            padding-left: 20px;
-        }
-
-        #menu > ul > li ul > li > a {
-            text-decoration: none;
-            padding: 12px;
-            color: #FFFFFF;
-            display: block;
-            white-space: nowrap;
-            min-width: 130px;
-            background: #262626;
-            border-bottom: solid 1px #2d2c2c;
-            border-top: solid 1px #111;
-            font-size: 12px;
-        }
-
-            #menu > ul > li ul > li > a:hover {
-                background: #222;
+            #menu ul li a.home {
+                background: url(../images/home.png) no-repeat top;
+                width: 26px;
+                margin-top: 6px;
+                position: relative;
             }
 
-        #menu > ul > li > div > ul > li > a {
-            color: #FFFFFF;
-        }
+            #menu ul li:hover {
+                background: #262626;
+            }
+
+            #menu ul li a {
+                line-height: 20px;
+                text-decoration: none;
+                display: block;
+                z-index: 6;
+                position: relative;
+                border-bottom: 1px solid transparent;
+                color: #BBB;
+                display: inline-block;
+                background: url(../images/cat-sep.gif) no-repeat right;
+                padding: 15px 25px 12px;
+                text-shadow: 1px 1px 1px #000000;
+                font-size: 12px;
+            }
+
+            #menu ul li div {
+                margin-left: 0px;
+                display: none;
+                position: absolute;
+                z-index: 25;
+                border: 1px solid #181717;
+                -webkit-border-radius: 0px 0px 5px 5px;
+                -moz-border-radius: 0px 0px 5px 5px;
+                -khtml-border-radius: 0px 0px 5px 5px;
+                border-radius: 0px 0px 5px 5px;
+                background: #262626;
+                margin-top: -2px;
+                border-top: none;
+            }
+
+            #menu ul li:hover div {
+                display: table;
+            }
+
+            #menu ul li div ul {
+                display: table-cell;
+            }
+
+            #menu ul li ul + ul {
+                padding-left: 20px;
+            }
+
+            #menu ul li ul li a {
+                text-decoration: none;
+                padding: 12px;
+                color: #FFFFFF;
+                display: block;
+                white-space: nowrap;
+                min-width: 130px;
+                background: #262626;
+                border-bottom: solid 1px #2d2c2c;
+                border-top: solid 1px #111;
+                font-size: 12px;
+            }
+
+                #menu ul li ul li a:hover {
+                    background: #222;
+                }
+
+            #menu ul li div ul li a {
+                color: #FFFFFF;
+            }
 
 /* box */
 .box {
@@ -1140,7 +1152,7 @@ Author URI: http://dev7studios.com
 #search {
     float: right;
     top: 40px;
-    right: -430px;
+    right: -330px;
     width: 180px;
     color: #333;
     position: relative;
@@ -1315,7 +1327,45 @@ body, td, th, input, textarea, select, a {
 
 
 /* button */
-a.button {
+a.button, input#Checkout {
+    -moz-box-shadow: inset 0px 1px 0px 0px #97c4fe;
+    -webkit-box-shadow: inset 0px 1px 0px 0px #97c4fe;
+    box-shadow: inset 0px 1px 0px 0px #97c4fe;
+    background: -webkit-gradient( linear, left top, left bottom, color-stop(0.05, #3d94f6), color-stop(1, #1e62d0) );
+    background: -moz-linear-gradient( center top, #3d94f6 5%, #1e62d0 100% );
+    -ms-filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#3d94f6', endColorstr='#1e62d0');
+    background-color: #3d94f6;
+    -moz-border-radius: 3px;
+    -webkit-border-radius: 3px;
+    border-radius: 3px;
+    border: 1px solid #337fed;
+    font-weight: bold;
+    /* height: 20px; */
+    padding: 4px;
+    text-align: center;
+    width: 90px;
+    margin-right: -0px;
+    color: #FFFFFF !important;
+    display: inline-block;
+    font-family: arial;
+    text-decoration: none;
+    text-shadow: 1px 1px 0 #1570CD;
+    line-height: 20px;
+}
+
+
+
+    a.button span {
+        color: #eee;
+        font-size: 12px;
+        font-weight: bold;
+        display: inline-block;
+        padding: 6px 12px 8px 5px;
+        text-shadow: 0 1px 0 #111;
+        line-height: 6px;
+    }
+
+td.button {
     -moz-box-shadow: inset 0px 1px 0px 0px #97c4fe;
     -webkit-box-shadow: inset 0px 1px 0px 0px #97c4fe;
     box-shadow: inset 0px 1px 0px 0px #97c4fe;
@@ -1343,15 +1393,15 @@ a.button {
 
 
 
-    a.button span {
-        color: #eee;
-        font-size: 12px;
-        font-weight: bold;
-        display: inline-block;
-        padding: 6px 12px 8px 5px;
-        text-shadow: 0 1px 0 #111;
-        line-height: 6px;
-    }
+td.button {
+    color: #eee;
+    font-size: 12px;
+    font-weight: bold;
+    display: inline-block;
+    padding: 6px 12px 8px 5px;
+    text-shadow: 0 1px 0 #111;
+    line-height: 6px;
+}
 
 
 
@@ -1894,14 +1944,18 @@ form h2 {
     padding: 7px;
 }
 
-    .cart-info td a {
-        color: #444;
-        line-height: 19px;
-        text-decoration: none;
-        font-weight: bold;
-        text-shadow: 0 1px #fff;
-        padding: 3px;
-    }
+.cart-info tbody .image img {
+    height: 100px;
+}
+
+.cart-info td a {
+    color: #444;
+    line-height: 19px;
+    text-decoration: none;
+    font-weight: bold;
+    text-shadow: 0 1px #fff;
+    padding: 3px;
+}
 
 
 .cart-info thead td {
@@ -2279,7 +2333,7 @@ button {
 .combo .icon {
     position: relative;
     top: 3px;
-    width: 24px;
+    width: auto;
     height: 24px;
     display: inline-block;
     margin: 0px 8px;
@@ -2645,6 +2699,7 @@ form h2 {
 
         .product-list .image img {
             display: block;
+            height: 150px;
         }
 
     .product-list .name {

@@ -11,7 +11,7 @@ namespace BookMarketSystem
 {
 
 
-    public partial class account
+    public partial class index
     {
 
         /// <summary>
@@ -42,40 +42,31 @@ namespace BookMarketSystem
         protected global::System.Web.UI.WebControls.DataList cart_total;
 
         /// <summary>
-        /// Logout 控件。
+        /// menuview 控件。
         /// </summary>
         /// <remarks>
         /// 自动生成的字段。
         /// 若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
         /// </remarks>
-        protected global::System.Web.UI.WebControls.LinkButton Logout;
+        protected global::System.Web.UI.WebControls.GridView menuview;
 
         /// <summary>
-        /// accountInformation 控件。
+        /// BookClassNameLabel 控件。
         /// </summary>
         /// <remarks>
         /// 自动生成的字段。
         /// 若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label accountInformation;
+        protected global::System.Web.UI.WebControls.Label BookClassNameLabel;
 
         /// <summary>
-        /// OrderList 控件。
+        /// BookList 控件。
         /// </summary>
         /// <remarks>
         /// 自动生成的字段。
         /// 若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
         /// </remarks>
-        protected global::System.Web.UI.WebControls.DataList OrderList;
-
-        /// <summary>
-        /// OrderData 控件。
-        /// </summary>
-        /// <remarks>
-        /// 自动生成的字段。
-        /// 若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.SqlDataSource OrderData;
+        protected global::System.Web.UI.WebControls.GridView BookList;
 
         /// <summary>
         /// CartData 控件。
@@ -85,5 +76,23 @@ namespace BookMarketSystem
         /// 若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
         /// </remarks>
         protected global::System.Web.UI.WebControls.SqlDataSource CartData;
+
+        /// <summary>
+        /// BookData 控件。
+        /// </summary>
+        /// <remarks>
+        /// 自动生成的字段。
+        /// 若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.SqlDataSource BookData;
+
+        /// <summary>
+        /// BookClassData 控件。
+        /// </summary>
+        /// <remarks>
+        /// 自动生成的字段。
+        /// 若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.SqlDataSource BookClassData;
     }
 }

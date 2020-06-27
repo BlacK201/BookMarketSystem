@@ -60,6 +60,8 @@
   <ItemGroup>
     <Content Include="account.aspx" />
     <Content Include="assets\css\flUhRq6tzZclQEJ-Vdg-IuiaDsNc.woff2" />
+    <Content Include="assets\css\1Ptug8zYS_SKggPNyC0ITw.woff2" />
+    <Content Include="assets\css\1Ptug8zYS_SKggPNyCMIT5lu.woff2" />
     <None Include="Properties\PublishProfiles\IISProfile.pubxml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
@@ -73,6 +75,7 @@
     <None Include="Login.aspx" />
     <Content Include="assets\css\main.css" />
     <Content Include="assets\css\Material Icons.css" />
+    <Content Include="assets\css\Raleway.css" />
     <Content Include="assets\images\20070919010738-99-50x50.jpg" />
     <Content Include="assets\images\20070919010738-99-80x80.jpg" />
     <Content Include="assets\images\account.png" />
@@ -81,6 +84,7 @@
     <Content Include="assets\images\banner.jpg" />
     <Content Include="assets\images\banner2.jpg" />
     <Content Include="assets\images\body_bg.jpg" />
+    <Content Include="assets\images\bookimagenotfound.jpg" />
     <Content Include="assets\images\bullets.png" />
     <Content Include="assets\images\cart.png" />
     <Content Include="assets\images\cat-sep.gif" />
@@ -121,6 +125,9 @@
     <Content Include="assets\images\twitter.png" />
     <Content Include="assets\images\wishlist.png" />
     <Content Include="assets\images\wish_list.png" />
+    <Content Include="assets\js\search.js" />
+    <Content Include="cart.aspx" />
+    <Content Include="index.aspx" />
     <Content Include="Register.aspx" />
     <Content Include="Web.config" />
   </ItemGroup>
@@ -131,6 +138,20 @@
     </Compile>
     <Compile Include="account.aspx.designer.cs">
       <DependentUpon>account.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="cart.aspx.cs">
+      <DependentUpon>cart.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="cart.aspx.designer.cs">
+      <DependentUpon>cart.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="index.aspx.cs">
+      <DependentUpon>index.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="index.aspx.designer.cs">
+      <DependentUpon>index.aspx</DependentUpon>
     </Compile>
     <Compile Include="Login.aspx.cs">
       <DependentUpon>Login.aspx</DependentUpon>

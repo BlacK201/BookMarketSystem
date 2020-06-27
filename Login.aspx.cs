@@ -13,7 +13,6 @@ namespace BookMarketSystem
             {
                 Response.Redirect("account.aspx");
             }
-
         }
 
         protected void LoginButton_Click(object sender, EventArgs e)
@@ -27,7 +26,7 @@ namespace BookMarketSystem
             conn.Open();
 
             SqlDataReader sdr = cmd.ExecuteReader();
-            // Todo: 直接在网站后端循环遍历有点蠢，如果有时间改成数据库函数
+
             while (sdr.Read())
             {
                 if (Convert.ToString(sdr[0]) == email.Text && Convert.ToString(sdr[1]) == password.Text)
