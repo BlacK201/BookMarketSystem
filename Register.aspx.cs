@@ -41,10 +41,5 @@ namespace BookMarketSystem
             }
             conn.Close();
         }
-
-        protected void RedirectToLogin_Click(object sender, EventArgs e)
-        {
-            Response.Redirect("./User_Login.aspx");
-        }
     }
 }

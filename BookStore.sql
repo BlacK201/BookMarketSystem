@@ -57,7 +57,6 @@ UserId int FOREIGN KEY REFERENCES Users(UserId) not null, -- 用户id
 BookId int FOREIGN KEY REFERENCES Books(BookId) not null, -- 图书id
 BookCount int not null, -- 购买数量 
 )
-
 -- /////////////////////////////////////////////////////////////////////////////
 CREATE PROCEDURE Checkout(@UserId int) AS  -- 订单存储过程
 DECLARE @Rows int
@@ -71,7 +70,7 @@ WHILE(@Row <= @Rows)
 BEGIN
 	SET @BookId = (SELECT TOP 1 BookId FROM Cart WHERE UserId = @UserId)
 	SET @OrderBookCount = (SELECT TOP 1 BookCount FROM Cart WHERE UserId = @UserId)
-	SET @OrderPrice = (SELECT BookPrice FROM Cart, Books WHERE Cart.BookId = Books.BookId AND Cart.BookId = (SELECT TOP 1 BookId FROM Cart WHERE UserId = @UserId)) * @OrderBookCount
+	SET @OrderPrice = (SELECT BookPrice FROM Cart, Books WHERE Cart.BookId = Books.BookId AND Cart.BookId = (SELECT TOP 1 BookId FROM Cart WHERE UserId = @UserId) AND Cart.UserId = @UserId) * @OrderBookCount
 	INSERT INTO Orders(UserId, BookId, OrderBookCount,OrderPrice,OrderCreateTime,OrderStatus) 
 	VALUES(@UserId,@BookId,@OrderBookCount,@OrderPrice,GETDATE(),1)
 	DELETE FROM Cart WHERE BookId = @BookId AND UserId = @UserId
